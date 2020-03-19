@@ -410,8 +410,8 @@ To install spotify-ripper once pyenv is setup:
 
 .. code:: bash
 
-    $ sudo apt-get install lame build-essential libffi-dev git python-dev python-setuptools
-    $ wget https://github.com/richardk80/libspotify/raw/master/libspotify-12.1.51-Linux-x86_64-release.tar.gz # (assuming 64-bit)
+    sudo apt-get install lame build-essential libffi-dev git python-dev python-setuptools
+    wget https://github.com/richardk80/libspotify/raw/master/libspotify-12.1.51-Linux-x86_64-release.tar.gz # (assuming 64-bit)
     tar xvf libspotify-12.1.51-Linux-x86_64-release.tar.gz
     cd libspotify-12.1.51-Linux-x86_64-release/
     sudo make install prefix=/usr/local
