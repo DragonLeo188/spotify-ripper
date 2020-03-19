@@ -351,14 +351,14 @@ To install pyenv using homebrew:
 
 .. code:: bash
 
-    $ brew update
-    $ brew install pyenv
-    $ eval "$(pyenv init -)"
+    brew update
+    brew install pyenv
+    eval "$(pyenv init -)"
     ## the next line ensures 'eval "$(pyenv init -)"' is run everytime terminal is opened
-    $ echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bash_profile
-    $ pyenv install 2.7.10  # or whatever version of python you want
-    $ pyenv global 2.7.10
-    $ python -V             # should say Python 2.7.10
+    echo 'if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi' >> ~/.bash_profile
+    pyenv install 2.7.10  # or whatever version of python you want
+    pyenv global 2.7.10
+    python -V             # should say Python 2.7.10
 
 To install spotify-ripper once pyenv is setup:
 
@@ -366,18 +366,18 @@ To install spotify-ripper once pyenv is setup:
 
     Download libspotify 12.1.51 for Mac OS X/Darwin from the link above (Prerequisites)
     Uncompress the file and copy libspotify.framework to /Library/Frameworks (optional)
-    $ sudo cp -R ./libspotify-12.1.51-Darwin-universal/libspotify.framework /Library/Frameworks
+    sudo cp -R ./libspotify-12.1.51-Darwin-universal/libspotify.framework /Library/Frameworks
     Create a symbolic link to /usr/local/opt/libspotify/lib/libspotify
-    $ mkdir -p /usr/local/opt/libspotify/lib
-    $ ln -s /Library/Frameworks/libspotify.framework/libspotify /usr/local/opt/libspotify/lib
-    $ brew install lame
+    mkdir -p /usr/local/opt/libspotify/lib
+    ln -s /Library/Frameworks/libspotify.framework/libspotify /usr/local/opt/libspotify/lib
+    brew install lame
     Pyspotify will have to be installed using pip before you can run the command below
     First make sure pip is up to date
-    $ pip install pip --upgrade
-    $ pip install pyspotify
+    pip install pip --upgrade
+    pip install pyspotify
     Everything else should be installed properly using the command below
-    $ git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
-    $ pyenv rehash
+    git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
+    pyenv rehash
 
 **Note that Spotify may no longer be issuing developer keys.** See `Libspotify’s Deprecation`_
 
@@ -400,11 +400,11 @@ To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer
 
 .. code:: bash
 
-    $ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
+    curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
     ## restart terminal ##
-    $ pyenv install 2.7.10  # or whatever version of python you want
-    $ pyenv global 2.7.10
-    $ python -V             # should say Python 2.7.10
+    pyenv install 2.7.10  # or whatever version of python you want
+    pyenv global 2.7.10
+    python -V             # should say Python 2.7.10
 
 To install spotify-ripper once pyenv is setup:
 
@@ -412,11 +412,11 @@ To install spotify-ripper once pyenv is setup:
 
     $ sudo apt-get install lame build-essential libffi-dev git python-dev python-setuptools
     $ wget https://github.com/richardk80/libspotify/raw/master/libspotify-12.1.51-Linux-x86_64-release.tar.gz # (assuming 64-bit)
-    $ tar xvf libspotify-12.1.51-Linux-x86_64-release.tar.gz
-    $ cd libspotify-12.1.51-Linux-x86_64-release/
-    $ sudo make install prefix=/usr/local
-    $ git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
-    $ pyenv rehash
+    tar xvf libspotify-12.1.51-Linux-x86_64-release.tar.gz
+    cd libspotify-12.1.51-Linux-x86_64-release/
+    sudo make install prefix=/usr/local
+    git clone https://github.com/richardk80/spotify-ripper.git && cd spotify-ripper && sudo python setup.py install
+    pyenv rehash
 
 **Note that Spotify may no longer be issuing developer keys.** See `Libspotify’s Deprecation`_
 
@@ -437,14 +437,14 @@ There's a few extra steps when using WSL:
 .. code:: bash
 
 
- $ sudo chmod -R 777 .spotify-ripper
+ sudo chmod -R 777 .spotify-ripper
 
 2. Next, cd into your .spotify-ripper folder with:
 
 .. code:: bash
 
 
-    $ cd .spotify-ripper
+    cd .spotify-ripper
     
 3. Use wget to download the config.ini and spotify_appkey.key files into the .spotify-ripper folder:
 
@@ -452,8 +452,8 @@ There's a few extra steps when using WSL:
 .. code:: bash
 
 
-    $ wget https://github.com/richardk80/spotify-ripper/raw/master/default_config.ini -O "config.ini"
-    $ wget https://github.com/richardk80/spotify-appkey/raw/master/spotify_appkey.key
+    wget https://github.com/richardk80/spotify-ripper/raw/master/default_config.ini -O "config.ini"
+    wget https://github.com/richardk80/spotify-appkey/raw/master/spotify_appkey.key
     
 4. Adjust the config.ini file according to the instructions `above <https://github.com/richardk80/spotify-ripper#config-file>`__
 
@@ -467,50 +467,50 @@ In addition to MP3 encoding, ``spotify-ripper`` supports encoding to FLAC, AAC, 
 .. code:: bash
 
     # FLAC
-    $ brew install flac
+    brew install flac
 
     # ALAC
-    $ brew install libav
+    brew install libav
 
     # AAC
-    $ brew install faac
+    brew install faac
 
     # MP4/M4A
-    $ brew install fdk-aac-encoder
+    brew install fdk-aac-encoder
 
     # Ogg Vorbis
-    $ brew install vorbis-tools
+    brew install vorbis-tools
 
     # Opus
-    $ brew install opus-tools
+    brew install opus-tools
 
 **Ubuntu/Debian**
 
 .. code:: bash
 
     # FLAC
-    $ sudo apt-get install flac
+    sudo apt-get install flac
 
     # ALAC
-    $ sudo apt-get install libav-tools
+    sudo apt-get install libav-tools
 
     # AAC
-    $ sudo apt-get install faac
+    sudo apt-get install faac
 
     # MP4/M4A (need to compile fdkaac from source)
-    $ sudo apt-get install libfdk-aac-dev automake autoconf
-    $ wget https://github.com/nu774/fdkaac/archive/v0.6.2.tar.gz
-    $ tar xvf v0.6.2.tar.gz
-    $ cd fdkaac-0.6.2
-    $ autoreconf -i
-    $ ./configure
-    $ sudo make install
+    sudo apt-get install libfdk-aac-dev automake autoconf
+    wget https://github.com/nu774/fdkaac/archive/v0.6.2.tar.gz
+    tar xvf v0.6.2.tar.gz
+    cd fdkaac-0.6.2
+    autoreconf -i
+    ./configure
+    sudo make install
 
     # Ogg Vorbis
-    $ sudo apt-get install vorbis-tools
+    sudo apt-get install vorbis-tools
 
     # Opus
-    $ sudo apt-get install opus-tools
+    sudo apt-get install opus-tools
 
 
 Upgrade
@@ -520,8 +520,8 @@ Use ``git pull`` to upgrade to the latest version.
 
 .. code:: bash
 
-    $ cd spotify-ripper
-    $ git pull
+    cd spotify-ripper
+    git pull
 
 
 Common Issues and Problems
