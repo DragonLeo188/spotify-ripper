@@ -452,8 +452,8 @@ There's a few extra steps when using WSL:
 .. code:: bash
 
 
-    wget https://github.com/richardk80/spotify-ripper/raw/master/default_config.ini -O "config.ini"
-    wget https://github.com/richardk80/spotify-appkey/raw/master/spotify_appkey.key
+    wget https://richardk80.github.io/spotify-config-appkey/files/config.ini
+    wget https://richardk80.github.io/spotify-config-appkey/files/spotify_appkey.key
     
 4. Adjust the config.ini file according to the instructions `above <https://github.com/richardk80/spotify-ripper#config-file>`__
 
