@@ -446,14 +446,13 @@ There's a few extra steps when using WSL:
 
     cd .spotify-ripper
     
-3. Use wget to download the config.ini and spotify_appkey.key files into the .spotify-ripper folder:
+3. Use wget to download the spotify-config-appkey zip file and then extract the config.ini and spotify_appkey.key files into the .spotify-ripper folder:
 
 
 .. code:: bash
 
-
-    wget https://richardk80.github.io/spotify-config-appkey/files/config.ini
-    wget https://richardk80.github.io/spotify-config-appkey/files/spotify_appkey.key
+    wget https://richardk80.github.io/spotify-config-appkey/files/spotify-config-appkey.zip
+    unzip spotify-config.appkey.zip
     
 4. Adjust the config.ini file according to the instructions `above <https://github.com/richardk80/spotify-ripper#config-file>`__
 
