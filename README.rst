@@ -389,6 +389,8 @@ the ``-k | --key`` option).
 Ubuntu/Debian
 ~~~~~~~~~~~~~
 
+Note: As of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this guide(https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04).
+
 Recommend approach uses `pyenv <https://github.com/yyuu/pyenv>`__. If
 you don't use pyenv, you need to install the ``python-dev`` package
 too. If you are installing on the Raspberry Pi (gen 1), use the
@@ -431,6 +433,8 @@ Windows(WSL 1 & 2)
 Unfortunately, pyspotify seems to have an issue building on Windows (if someone can get this to work, please let me know). The best alternative is to set up WSL in Windows 10.  Instructions on how to install WSL in Windows 10 can be found in this `tutorial <https://docs.microsoft.com/en-us/windows/wsl/install-win10>`__. You should use Ubuntu with WSL. After you've completed all installation steps, follow the Ubuntu/Debian install steps listed above.
 
 There's a few extra steps when using WSL:
+
+Note: These steps should also be used after installing on both Ubuntu/Debian or MacOS.
 
 1. After installation of spotify-ripper is complete, change the read/write permissions for the .spotify-ripper folder with:
 
