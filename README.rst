@@ -389,7 +389,7 @@ the ``-k | --key`` option).
 Ubuntu/Debian
 ~~~~~~~~~~~~~
 
-Note: As of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this `guide <https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04>`__.
+Note: As of Ubuntu 20.04, Python 2 has been removed and Python 3 is the default. You can use the pyenv method to install Python 2 on Ubuntu 20.04 and up, but if that does not work you can follow this `_guide <https://www.vultr.com/docs/how-to-install-python-2-on-ubuntu-20-04>`__.
 
 Recommend approach uses `pyenv <https://github.com/yyuu/pyenv>`__. If
 you don't use pyenv, you need to install the ``python-dev`` package
