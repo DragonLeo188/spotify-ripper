@@ -1,3 +1,6 @@
+**Spotify Ripper**
+========================
+
 A fork of
 `spotify-ripper <https://github.com/robbeofficial/spotifyripper>`__ that
 uses `pyspotify <https://github.com/mopidy/pyspotify>`__ v2.5
