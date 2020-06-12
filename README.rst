@@ -74,9 +74,6 @@ Features
 Usage
 -----
 
-Command Line
-~~~~~~~~~~~~
-
 ``spotify-ripper`` takes many command-line options
 
 .. code::
@@ -458,7 +455,7 @@ Note: These steps should also be used after installing on both Ubuntu/Debian or 
     wget https://spotripper.rikiscripts.me/files/config.ini
     wget https://spotripper.rikiscripts.me/files/spotify_appkey.key
     
-4. Adjust the config.ini file using the options `above <https://github.com/richardk80/spotify-ripper#features>`__ or just use the defaults.
+4. Adjust the config.ini file using the options `above <https://github.com/richardk80/spotify-ripper#usage>`__ or just use the defaults.
 
 Optional Encoding Formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~
