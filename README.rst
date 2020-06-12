@@ -35,7 +35,7 @@ Features
 
 -  accepts tracks, playlists, albums, and artist URIs
 
-   **Note:** Ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"
+   **Note: Ripping playlists require putting Spotify URIs into a .txt file and using the command "spotify-ripper name_of_file.txt"**
 
 -  search for tracks using Spotify queries
 
