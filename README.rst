@@ -317,7 +317,7 @@ Installation
 Prerequisites
 ~~~~~~~~~~~~~
 
--  `libspotify <https://libspotify.rikiscripts.me/files/libspotify-12.1.51-Darwin-universal.zip>`__ <--Download this for later use (MacOS).
+-  `libspotify <https://mopidy.github.io/libspotify-archive/libspotify-12.1.51-Darwin-universal.zip>`__ <--Download this for later use (MacOS).
 
 -  `pyspotify <https://github.com/mopidy/pyspotify>`__
 
@@ -394,7 +394,7 @@ Recommend approach uses `pyenv <https://github.com/yyuu/pyenv>`__. If
 you don't use pyenv, you need to install the ``python-dev`` package
 too. If you are installing on the Raspberry Pi (gen 1), use the
 `eabi-armv6hf
-version <https://libspotify.rikiscripts.me/files/libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release.tar.gz>`__
+version <https://mopidy.github.io/libspotify-archive/libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release.tar.gz>`__
 of libspotify.
 
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
@@ -412,7 +412,7 @@ To install spotify-ripper once pyenv is setup:
 .. code:: bash
 
     sudo apt-get install lame build-essential libffi-dev git python-dev python-setuptools
-    wget https://libspotify.rikiscripts.me/files/libspotify-12.1.51-Linux-x86_64-release.tar.gz # (assuming 64-bit)
+    wget https://mopidy.github.io/libspotify-archive/libspotify-12.1.51-Linux-x86_64-release.tar.gz # (assuming 64-bit)
     tar xvf libspotify-12.1.51-Linux-x86_64-release.tar.gz
     cd libspotify-12.1.51-Linux-x86_64-release/
     sudo make install prefix=/usr/local
