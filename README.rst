@@ -449,7 +449,7 @@ Note: These steps should also be used after installing on both Ubuntu/Debian or 
 
     cd .spotify-ripper
     
-3. Add the config.ini and spotify_appkey.key files from this repo into the .spotify-ripper folder:
+3. Add the config.ini and spotify_appkey.key files from this repo into the .spotify-ripper folder.
 
 
 4. Adjust the config.ini file using the options `above <https://github.com/richardk80/spotify-ripper#usage>`__ or just use the defaults.
