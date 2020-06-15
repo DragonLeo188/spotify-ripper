@@ -317,7 +317,7 @@ Installation
 Prerequisites
 ~~~~~~~~~~~~~
 
--  `libspotify <https://libspotify.rikiscripts.me/files/libspotify-12.1.51-Darwin-universal.zip>`__
+-  `libspotify <https://libspotify.rikiscripts.me/files/libspotify-12.1.51-Darwin-universal.zip>`__ <--Download this for later use.
 
 -  `pyspotify <https://github.com/mopidy/pyspotify>`__
 
