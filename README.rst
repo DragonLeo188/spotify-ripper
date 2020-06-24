@@ -343,6 +343,8 @@ Prerequisites
 Mac OS X
 ~~~~~~~~
 
+**Note: Spotify-Ripper works with macOS 11 Big Sur**
+
 Recommend approach uses `homebrew <http://brew.sh/>`__ and
 `pyenv <https://github.com/yyuu/pyenv>`__
 
