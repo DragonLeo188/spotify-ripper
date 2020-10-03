@@ -399,6 +399,8 @@ too. If you are installing on the Raspberry Pi (gen 1), use the
 version <https://mopidy.github.io/libspotify-archive/libspotify-12.1.103-Linux-armv6-bcm2708hardfp-release.tar.gz>`__
 of libspotify.
 
+As of right now, this will not install on Raspberry Pi 4. Lack of libspotify support for Rpi 4's ARM chip is most likely the reason.
+
 To install pyenv using `pyenv-installer <https://github.com/yyuu/pyenv-installer>`__ (requires git and curl):
 
 .. code:: bash
