@@ -1,0 +1,40 @@
+dleo@DragonLeos-MacBook-Pro spotify-ripper %  spotify-ripper -u user spotify:track:52xaypL0Kjzk0ngwv3oBPR
+
+Spotify Ripper - v2.9.6
+  Encoding output:	MP3, CBR 320 kbps
+  Spotify bitrate:	320 kbps
+  Unicode support:	ASCII only
+  Output directory:	/Users/dleo/Desktop/Music
+  Settings directory:	/Users/dleo/.spotify-ripper
+  Format String:	{artist} - {track_name}.{ext}
+  Overwrite files:	Yes
+Logging in...
+Exception in thread SpotifyEventLoop:
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python@3.9/3.9.0_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/threading.py", line 950, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/site-packages/spotify_ripper-2.9.6-py3.9.egg/spotify_ripper/eventloop.py", line 78, in run
+    while self._runnable and self._ripper.isAlive():
+AttributeError: 'Ripper' object has no attribute 'isAlive'
+^C
+Aborting...
+
+change all isAlive() => is_alive
+https://stackoverflow.com/questions/15063963/python-is-thread-still-running
+
+==================================
+
+Spotify error detected
+module 'urllib' has no attribute 'urlretrieve'
+
+change all urllib => urllib.request
+
+https://stackoverflow.com/questions/17960942/attributeerror-module-object-has-no-attribute-urlretrieve
+
+====================================================
+
+floating point exception  spotify-ripper spotify:track:7sDFrxuq3nrKlVe6KUR7A3
+segmentaion fault
+
+run with sudo
+
